@@ -23,7 +23,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             args.remove(0);
             match command {
                 "cd" => {
-                    // pipe = Stdio::null();
                     if args.len() > 1 {
                         eprintln!("the number of arguments is too much");
                         continue;
